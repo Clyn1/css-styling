@@ -3,38 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction to HTML5</title>
+    <title>Advanced HTML5 Elements and Forms</title>
 </head>
 <body>
-    <!-- Header Section -->
     <header>
-        <h1>Welcome to HTML5</h1>
+        <h1>Welcome to Advanced HTML5 Elements</h1>
     </header>
+    
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Topics Covered</h2>
+        <ol type="I">
+            <li>Images</li>
+            <li>Lists</li>
+            <li>Tables</li>
+            <li>Forms</li>
+            <li>Multimedia</li>
+        </ol>
+    </section>
 
-    <!-- Navigation Section -->
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- External Image -->
+    <section>
+        <h2>Sample Image</h2>
+        <img src="image/mercedes-benz-190-sl-douglas-pittman.jpg" alt="Sample Image from Pexels" width="500">
+    </section>
 
-    <!-- Main Content Section -->
-    <main>
-        <section>
-            <h2>About HTML5</h2>
-            <p>HTML5 is the latest version of the HyperText Markup Language, designed to structure and present content on the web efficiently.</p>
-        </section>
-        <section>
-            <h2>Why Use HTML5?</h2>
-            <p>HTML5 provides better semantic elements, improved accessibility, and enhanced multimedia support.</p>
-        </section>
-    </main>
+    <!-- Table of Contacts -->
+    <section>
+        <h2>Contact List</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Clinton</td>
+                <td>123 Main St</td>
+                <td>+1234567890</td>
+                <td>Clinton@example.com</td>
+            </tr>
+            <tr>
+                <td>Love Smith</td>
+                <td>456 Oak Ave</td>
+                <td>+9876543210</td>
+                <td>smitg@example.com</td>
+            </tr>
+            <tr>
+                <td>Emily Johnson</td>
+                <td>789 Pine St</td>
+                <td>+1122334455</td>
+                <td>emilyj@example.com</td>
+            </tr>
+            <tr>
+                <td>Michael Brown</td>
+                <td>159 Cedar Rd</td>
+                <td>+2233445566</td>
+                <td>michaelb@example.com</td>
+            </tr>
+            <tr>
+                <td>Sarah Wilson</td>
+                <td>753 Elm St</td>
+                <td>+3344556677</td>
+                <td>sarahw@example.com</td>
+            </tr>
+        </table>
+    </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>Contact us at: <a href="mailto:info@example.com">info@example.com</a></p>
-    </footer>
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter a password" required>
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other" required>
+            <label for="other">Other</label>
+            <br><br>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select Country</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+            </select>
+            <br><br>
+
+            <label>Interests:</label><br>
+            <input type="checkbox" id="coding" name="interests" value="Coding">
+            <label for="coding">Coding</label>
+            <input type="checkbox" id="music" name="interests" value="Music">
+            <label for="music">Music</label>
+            <input type="checkbox" id="sports" name="interests" value="Sports">
+            <label for="sports">Sports</label>
+            <br><br>
+
+            <input type="submit" value="Register">
+        </form>
+    </section>
 </body>
 </html>
